@@ -15,10 +15,10 @@
 
 ### 로그인 페이지
 
-- [SignInActivity.kt](https://github.com/oxix97/Android_SOPT/blob/week1/sopt1/app/src/main/java/com/example/project1/SignInActivity.kt)
-- [action_main.xml](https://github.com/oxix97/Android_SOPT/blob/week1/sopt1/app/src/main/res/layout/activity_main.xml)
+- [SignInActivity.kt](https://github.com/29th-WE-SOPT-Android-Part/Android-Jongchan/blob/week1/app/src/main/java/com/example/sopt_week1/SignInActivity.kt)
+- [action_sign_in.xml](https://github.com/29th-WE-SOPT-Android-Part/Android-Jongchan/blob/week1/app/src/main/res/layout/activity_sign_in.xml)
 
-![img.png](img.png)
+![img_1.png](img_1.png)
 
 해당 화면의 layout은 constraintView를 사용하였고 textView, editTextView
 각각 위에 부분에 있는 View들의 밑에 배치하였고 margin값을 주어 간격을 주었습니다.
@@ -59,10 +59,10 @@ binding.login.setOnClickListener {
 
 ### 회원가입 페이지
 
-- [SignUpActivity.kt](https://github.com/oxix97/Android_SOPT/blob/week1/sopt1/app/src/main/java/com/example/project1/SignUpActivity.kt)
-- [activity_sign_up.xml](https://github.com/oxix97/Android_SOPT/blob/week1/sopt1/app/src/main/res/layout/activity_sign_up.xml)
+- [SignUpActivity.kt](https://github.com/29th-WE-SOPT-Android-Part/Android-Jongchan/blob/week1/app/src/main/java/com/example/sopt_week1/SignUpActivity.kt)
+- [activity_sign_up.xml](https://github.com/29th-WE-SOPT-Android-Part/Android-Jongchan/blob/week1/app/src/main/res/layout/activity_sign_up.xml)
 
-![img_1.png](img_1.png)
+![img_2.png](img_2.png)
 
 constraintLayout 활용하여 각 View들을 배치하였으며 회원 가입 완료 버튼의 경우
 [로그인 페이지]()에 textNullChecker()로 모든 editText가 비어있는 것을 검사합니다.
@@ -73,10 +73,10 @@ constraintLayout 활용하여 각 View들을 배치하였으며 회원 가입 �
 
 ### 자기소개 페이지
 
-- [HomeActivity](https://github.com/oxix97/Android_SOPT/blob/week1/sopt1/app/src/main/java/com/example/project1/HomeActivity.kt)
-- [activity_main2](https://github.com/oxix97/Android_SOPT/blob/week1/sopt1/app/src/main/res/layout/activity_main2.xml)
+- [HomeActivity](https://github.com/29th-WE-SOPT-Android-Part/Android-Jongchan/blob/week1/app/src/main/java/com/example/sopt_week1/HomeActivity.kt)
+- [activity_home](https://github.com/29th-WE-SOPT-Android-Part/Android-Jongchan/blob/week1/app/src/main/res/layout/activity_home.xml)
 
-![img_3.png](img_3.png)
+![img.png](img.png)
 
 이전 뷰들과 같이 constraintView를 사용하여 imageView, textView를 배치하였습니다.
 imageView의 사진은 drawable 폴더에서 이미지를 가져왔습니다.
@@ -84,8 +84,6 @@ imageView의 사진은 drawable 폴더에서 이미지를 가져왔습니다.
 ---
 
 ### level 2-1
-
-//여기다가 gif
 
 #### SignUpActivity
 
@@ -140,8 +138,6 @@ private lateinit var getResultText: ActivityResultLauncher<Intent>
 
 #### HomeActivity
 
-![img_4.png](img_4.png) // 이거 gif 대체
-
 - #### 인텐트
 
 인텐트는 앱에서 무언가 작업을 수행하기 위해 사용되는 일종의 전달수단이다. 또한 내가 만든 액티비티나
@@ -166,7 +162,6 @@ private lateinit var getResultText: ActivityResultLauncher<Intent>
 
 #### HomeActivity
 
--- gif 넣기
 
 - 이미지 비율을 1:1로 맞추기 위해 constraintDimensionRatio 속성을 이용해 1:1로 맞췄습니다.
 - 화면에 보이지 않는 자기 소개 부분을 nestedScrollView로 하여 스크롤 가능하게 하였습니다.
