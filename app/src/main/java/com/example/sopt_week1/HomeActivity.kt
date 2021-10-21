@@ -5,16 +5,33 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.sopt_week1.databinding.ActivityHomeBinding
+import com.example.sopt_week1.databinding.FragmentFollowersBinding
 
 class HomeActivity : AppCompatActivity() {
     private lateinit var binding: ActivityHomeBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityHomeBinding.inflate(layoutInflater)
+        initTransactionEvent()
         setContentView(binding.root)
-        binding.ibGithubButton.setOnClickListener {
-            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/oxix97/Android_SOPT"))
-            startActivity(intent)
+    }
+    private fun initTransactionEvent() {
+        val followers = FollowersFragment()
+        val repository = RepositoryFragment()
+        supportFragmentManager.beginTransaction().add(R.id.container,repository).commit()
+
+        binding.btFollower.setOnClickListener {
+            val transaction = supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.container,followers)
+            transaction.commit()
         }
+        binding.btRepository.setOnClickListener {
+            val transaction = supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.container,repository)
+            transaction.commit()
+        }
+    }
+    private fun follower() {
+
     }
 }
