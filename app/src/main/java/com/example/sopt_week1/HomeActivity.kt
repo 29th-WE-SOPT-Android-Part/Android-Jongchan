@@ -18,8 +18,7 @@ class HomeActivity : AppCompatActivity() {
     private fun initTransactionEvent() {
         val followers = FollowersFragment()
         val repository = RepositoryFragment()
-        supportFragmentManager.beginTransaction().add(R.id.container,repository).commit()
-
+        supportFragmentManager.beginTransaction().add(R.id.container,followers).commit()
         binding.btFollower.setOnClickListener {
             val transaction = supportFragmentManager.beginTransaction()
             transaction.replace(R.id.container,followers)
@@ -30,8 +29,5 @@ class HomeActivity : AppCompatActivity() {
             transaction.replace(R.id.container,repository)
             transaction.commit()
         }
-    }
-    private fun follower() {
-
     }
 }
