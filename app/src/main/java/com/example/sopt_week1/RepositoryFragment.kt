@@ -27,12 +27,12 @@ class RepositoryFragment : Fragment() {
         binding.rvRepository.adapter = repositoryAdapter
         repositoryAdapter.repositoryList.addAll(
             listOf(
-                RepositoryData("oxix", "비트코인 미리 사둘껄..."),
-                RepositoryData("Chan", "안녕하세요"),
-                RepositoryData("JONGCHAN", "이종찬입니다."),
-                RepositoryData("LEEJONGCHAN", "안드로이드 공부 열심히"),
+                RepositoryData("김혜인님의 repository", ""),
+                RepositoryData("김효림님의 repository", "안녕하세요"),
+                RepositoryData("이강민님의 repository", "이종찬입니다."),
+                RepositoryData("최유림님의 repository", "안드로이드 공부 열심히"),
+                RepositoryData("이종찬님의 repository", "전동킥보드 타지 마세요 여러분"),
                 RepositoryData("도지", "화성 갈끄니까~~~"),
-                RepositoryData("이종찬", "전동킥보드 타지 마세요 여러분"),
             )
         )
         repositoryAdapter.notifyDataSetChanged()
