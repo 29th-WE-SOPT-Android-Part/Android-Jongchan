@@ -23,6 +23,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:menu="@menu/menu"
+            app:itemTextColor="@color/color"
             app:itemRippleColor="#FFBEBE"
             app:itemIconTint="@color/color"
             android:id="@+id/bnv_sample"

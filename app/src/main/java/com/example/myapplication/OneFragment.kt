@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.bumptech.glide.Glide
+import com.bumptech.glide.request.RequestOptions
 import com.example.myapplication.databinding.FragmentOneBinding
 import com.google.android.material.tabs.TabLayoutMediator
 
@@ -21,7 +23,6 @@ class OneFragment : Fragment() {
         _binding = FragmentOneBinding.inflate(layoutInflater, container, false)
         initAdapter()
         initTransactionEvent()
-//        initTabLayout()
         binding.btFollower.isSelected = true
         return binding.root
     }
