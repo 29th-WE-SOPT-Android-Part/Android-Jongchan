@@ -11,6 +11,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
+        title = "SOPT_WEEK_4"
         initAdapter()
         initBottomNavi()
         setContentView(binding.root)
@@ -46,7 +47,8 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-//    private fun initTransactionEvent() {
+
+    //    private fun initTransactionEvent() {
 //        val followers = FollowersFragment()
 //        val repository = RepositoryFragment()
 //        supportFragmentManager.beginTransaction().add(R.id.container, followers).commit()

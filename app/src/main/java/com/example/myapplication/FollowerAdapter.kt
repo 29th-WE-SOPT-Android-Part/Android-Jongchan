@@ -22,8 +22,8 @@ class FollowersAdapter : RecyclerView.Adapter<FollowersAdapter.FollowersViewHold
 
     class FollowersViewHolder(private val binding: FollowerListBinding) : RecyclerView.ViewHolder(binding.root) {
         fun onBind(data: FollowerData) {
-            binding.tvTitle.text = data.title
-            binding.tvText.text = data.text
+            binding.tvTitle.text = data.id
+            binding.tvText.text = data.profile
         }
     }
 
