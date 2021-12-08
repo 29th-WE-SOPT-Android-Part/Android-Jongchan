@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation_component"
     app:startDestination="@id/fragment_nav_comp1">
     <fragment
         android:id="@+id/fragment_nav_comp1"
-        android:name="com.example.myapplication.view.NavigationComponent1"
+        android:name="com.example.myapplication.view.fragment.NavigationComponent1"
         android:label="nav1">
         <action
             android:id="@+id/navComp1_to_navComp2"
@@ -15,16 +14,20 @@
     </fragment>
     <fragment
         android:id="@+id/fragment_nav_comp2"
-        android:name="com.example.myapplication.view.NavigationComponent2"
+        android:name="com.example.myapplication.view.fragment.NavigationComponent2"
         android:label="nav2">
         <action
             android:id="@+id/navComp2_to_navComp3"
+            app:popUpTo="@id/fragment_nav_comp1"
             app:destination="@id/fragment_nav_comp3" />
     </fragment>
     <fragment
         android:id="@+id/fragment_nav_comp3"
-        android:name="com.example.myapplication.view.NavigationComponent3"
+        android:name="com.example.myapplication.view.fragment.NavigationComponent3"
         android:label="nav3">
+        <action
+            android:id="@+id/navComp3"
+            app:popUpTo="@id/fragment_nav_comp2" />
     </fragment>
     <activity
         android:id="@+id/onBodingActivity"

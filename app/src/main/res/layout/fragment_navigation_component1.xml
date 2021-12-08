@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="5dp"
-    tools:context=".view.NavigationComponent1">
+    tools:context=".view.fragment.NavigationComponent1">
 
     <ImageView
         android:id="@+id/iv_image"

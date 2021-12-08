@@ -6,7 +6,7 @@
         android:layout_height="match_parent"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:background="#2196F3"
-        tools:context=".TabFragment2">
+        tools:context=".view.fragment.TabFragment2">
 
 
     <TextView android:layout_width="wrap_content"

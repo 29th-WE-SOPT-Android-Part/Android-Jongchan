@@ -13,17 +13,17 @@
         android:theme="@style/Theme.MyApplication"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".view.SettingActivity"
+            android:name=".view.Activity.SettingActivity"
             android:exported="false" />
         <activity
-            android:name=".SignUpActivity"
-            android:exported="true" />
+            android:name=".view.Activity.SignUpActivity"
+            android:exported="false" />
         <activity
-            android:name=".SignInActivity"
-            android:exported="true" />
+            android:name=".view.Activity.SignInActivity"
+            android:exported="false" />
         <activity
-            android:name=".MainActivity"
-            android:exported="true" />
+            android:name=".view.Activity.MainActivity"
+            android:exported="false" />
         <activity
             android:name=".view.OnBodingActivity"
             android:exported="true">
