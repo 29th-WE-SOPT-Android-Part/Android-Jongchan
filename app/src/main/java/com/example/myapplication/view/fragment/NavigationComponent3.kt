@@ -20,7 +20,7 @@ class NavigationComponent3 : Fragment() {
     ): View? {
         _binding = FragmentNavigationComponent3Binding.inflate(layoutInflater)
         binding.tvAbout.text = "SOPTHub를\n시작해볼까요?"
-        initIntent()
+        onClickBtnNext()
         Glide.with(this)
             .load(R.drawable.dodogi)
             .override(1000, 400)
@@ -29,7 +29,7 @@ class NavigationComponent3 : Fragment() {
         return binding.root
     }
 
-    private fun initIntent() {
+    private fun onClickBtnNext() {
         binding.btnNext.setOnClickListener {
             requireActivity().finish()
             startActivity(Intent(requireActivity(), SignInActivity::class.java))
