@@ -16,7 +16,6 @@ object SharedPreferences {
         val preferences = context.getSharedPreferences(USER_AUTH, Context.MODE_PRIVATE)
         preferences.edit()
             .remove(AUTO_LOGIN)
-            .clear()
             .apply()
     }
 

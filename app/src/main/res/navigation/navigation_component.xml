@@ -8,7 +8,7 @@
         android:id="@+id/fragment_nav_comp1"
         android:name="com.example.myapplication.view.fragment.NavigationComponent1"
         android:label="첫 번째 화면"
-        >
+        tools:layout="@layout/fragment_navigation_component1">
         <action
             android:id="@+id/navComp1_to_navComp2"
             app:destination="@id/fragment_nav_comp2" />
@@ -17,7 +17,7 @@
         android:id="@+id/fragment_nav_comp2"
         android:name="com.example.myapplication.view.fragment.NavigationComponent2"
         android:label="두 번째 화면"
-        >
+        tools:layout="@layout/fragment_navigation_component2">
         <action
             android:id="@+id/navComp2_to_navComp3"
             app:popUpTo="@id/fragment_nav_comp1"
@@ -26,10 +26,10 @@
     <fragment
         android:id="@+id/fragment_nav_comp3"
         android:name="com.example.myapplication.view.fragment.NavigationComponent3"
-        android:label="세 번째 화면">
+        android:label="세 번째 화면"
+        tools:layout="@layout/fragment_navigation_component3">
         <action
-            android:id="@+id/navComp3"
-            app:popUpTo="@id/fragment_nav_comp2" />
+            android:id="@+id/navComp3"/>
     </fragment>
     <activity
         android:id="@+id/onBodingActivity"
